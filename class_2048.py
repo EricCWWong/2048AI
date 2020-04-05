@@ -38,6 +38,17 @@ class Game_2048:
     def set_allowed_moves(self):
         '''
             This method will check what moves are allowed for the current board.
+            If a move will not lead to a new state, it will not be permitted.
+
+            Example:
+            >>> self.grid = [[2,0,0,0]
+                             [2,0,0,0]
+                             [4,8,0,0]
+                             [2,8,2,0]]
+            >>> self.set_allowed_moves()
+            >>> self.actions
+            >>> # Here, left move is forbidden. Left is false.
+            >>> [False, True, True, True]
         '''
         # get the potential grid after a move.
         old = self.grid
@@ -76,6 +87,15 @@ class Game_2048:
             This will create our state feature vector.
             At the moment, we will represent our state as
             the grid flatten as a 1D array.
+
+            Example:
+            >>> self.grid = [[2,0,2,0]
+                             [0,0,4,0]
+                             [4,4,0,0]
+                             [2,8,0,2]]
+            >>> state_vec = self.set_state_vector()
+            >>> state_vec
+            >>> [2,0,2,0,0,0,4,0,4,4,0,0,2,8,0,2]
         '''
 
         # this part stores the value of each grid
@@ -91,6 +111,9 @@ class Game_2048:
         return self.state
 
     def set_state_action_vector(self):
+        '''
+            This set our action dependent state vector.
+        '''
         self.state_action = relationship_representation(self.grid)
         return self.state_action
     
@@ -103,6 +126,18 @@ class Game_2048:
     def right_move(self):
         '''
             Swipe right.
+
+            Example:
+            >>> self.grid = [[2,0,2,0]
+                             [0,0,4,0]
+                             [4,4,0,0]
+                             [2,8,0,2]]
+            >>> new_grid = self.right_move()
+            >>> new_grid
+            >>> [[0,0,0,4]
+                 [0,0,0,4]
+                 [0,0,0,8]
+                 [0,2,8,2]]
         '''
         grid = merge(self.grid)
         return grid
@@ -110,6 +145,18 @@ class Game_2048:
     def left_move(self):
         '''
             Swipe left.
+
+            Example:
+            >>> self.grid = [[2,0,2,0]
+                             [0,0,4,0]
+                             [4,4,0,0]
+                             [2,8,0,2]]
+            >>> new_grid = self.left_move()
+            >>> new_grid
+            >>> [[4,0,0,0]
+                 [4,0,0,0]
+                 [8,0,0,0]
+                 [2,8,2,0]]
         '''
         grid = np.flip(self.grid,1)
         grid = merge(grid)
@@ -119,6 +166,18 @@ class Game_2048:
     def down_move(self):
         '''
             Swipe down.
+
+            Example:
+            >>> self.grid = [[2,0,2,0]
+                             [0,0,4,0]
+                             [4,4,0,0]
+                             [2,8,0,2]]
+            >>> new_grid = self.down_move()
+            >>> new_grid
+            >>> [[0,0,0,0]
+                 [2,0,0,0]
+                 [4,4,2,0]
+                 [2,8,4,2]]
         '''
         grid = np.transpose(self.grid)
         grid = merge(grid)
@@ -128,6 +187,18 @@ class Game_2048:
     def up_move(self):
         '''
             Swipe up.
+
+            Example:
+            >>> self.grid = [[2,0,2,0]
+                             [0,0,4,0]
+                             [4,4,0,0]
+                             [2,8,0,2]]
+            >>> new_grid = self.up_move()
+            >>> new_grid
+            >>> [[2,4,2,2]
+                 [4,8,4,0]
+                 [2,0,0,0]
+                 [0,0,0,0]]
         '''
         grid = np.transpose(self.grid)
         grid = np.flip(grid,1)
