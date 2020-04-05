@@ -1,7 +1,8 @@
 import numpy as np
 import random
-from class_2048_helper import merge, neighbour_difference, tiles_on_edge
+from class_2048_helper import merge, neighbour_difference
 from reward_2048 import reward_merge, reward_align, reward_empty
+from representation import relationship_representation
 
 class Game_2048:
     def __init__(self):
@@ -27,7 +28,8 @@ class Game_2048:
         self.grid = grid
         self.terminal = False
         self.reward = 0
-        self.state = self.state_vector()
+        self.set_state_vector()
+        self.set_state_action_vector()
 
         # resetting the allowed moves of the game.
         self.set_allowed_moves()
@@ -69,13 +71,14 @@ class Game_2048:
         # put all the data into one array.
         self.actions = np.array([self.left, self.right, self.up, self.down])
 
-    def state_vector(self):
+    def set_state_vector(self):
         '''
             This will create our state feature vector.
             At the moment, we will represent our state as
             the grid flatten as a 1D array.
         '''
-        # this part stores the value of each
+
+        # this part stores the value of each grid
         vec = self.grid.flatten()
         state_vec = []
         for el in vec:
@@ -84,18 +87,12 @@ class Game_2048:
             else:
                 state_vec.append(np.log2(el))
         
-        # diff = neighbour_difference(self.grid)
+        self.state = np.array(state_vec)
+        return self.state
 
-        # state_vec = np.insert(state_vec, len(state_vec), diff)
-
-        # state_vec = np.insert(state_vec, len(state_vec), reward_empty(self.grid))
-
-        # edge_count = tiles_on_edge(self.grid)
-
-        # state_vec = np.insert(state_vec, len(state_vec), edge_count)
-
-
-        return np.array(state_vec)
+    def set_state_action_vector(self):
+        self.state_action = relationship_representation(self.grid)
+        return self.state_action
     
     def max(self):
         '''
@@ -189,11 +186,12 @@ class Game_2048:
         
         self.grid = self.new_tile_generation()
 
-        self.reward = self.reward + reward_align(self.grid) + reward_empty(self.grid)
+        #self.reward = self.reward + reward_align(self.grid)
 
         self.set_allowed_moves()   
         self.is_terminal()
-        self.state = self.state_vector()
+        self.set_state_vector()
+        self.set_state_action_vector()
         
         self.max_value = self.max()
             
@@ -217,6 +215,7 @@ if __name__ == "__main__":
     print(game1.grid)
     game1.make_move(up)
     print(game1.reward)
+    print(game1.state_action)
     print(game1.grid)
     game1.make_move(right)
     print(game1.reward)

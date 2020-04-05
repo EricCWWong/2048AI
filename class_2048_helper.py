@@ -68,7 +68,7 @@ def merge(grid):
         new_grid.append(new_tiles)
     return np.array(new_grid)
 
-def neighbour_difference(grid):
+def neighbour_difference(grid, axis=None):
     '''
         This calculates the differences between neighbouring tiles.
     '''
@@ -82,38 +82,9 @@ def neighbour_difference(grid):
         for i in range(3):
             vert_diff.append(row[i] - row[i + 1])
     
-    diff = hor_diff + vert_diff
-
-    return np.array(diff)
-
-def tiles_on_edge(grid):
-    '''
-        This counts the number of non-empty tiles at each edge of the grid.
-    '''
-    
-    count = []
-    count_top = 0
-    for el in grid[0]:
-        if el != 0:
-            count_top += 1
-    count.append(count_top)
-
-    count_bot = 0
-    for el in grid[3]:
-        if el != 0:
-            count_bot += 1
-    count.append(count_bot)
-
-    count_left = 0
-    for el in grid[:,0]:
-        if el != 0:
-            count_left += 1
-    count.append(count_left)
-
-    count_right = 0
-    for el in grid[:,0]:
-        if el != 0:
-            count_right += 1
-    count.append(count_right)
-
-    return np.array(count)
+    if axis == 0:
+        return np.array(hor_diff)
+    elif axis == 1:
+        return np.array(vert_diff)
+    else:
+        return np.insert(hor_diff, len(hor_diff), vert_diff)
