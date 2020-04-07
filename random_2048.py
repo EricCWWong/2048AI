@@ -5,14 +5,17 @@ import tqdm
 
 def random_2048(num_episodes, max_steps=np.inf):
     '''
-        This plays the game as a random agent.
+        This plays the game as a random agent. Decision
+        are chosen randomly.
     '''
 
     # create a game.
     env = Game_2048()
 
-    # initialise an array to store the maximum value of the tiles.
+    # initialise an array to store the maximum value of the tiles
+    # and score.
     max_value = []
+    score = []
 
     # run episodes.
     for i in tqdm.tqdm(range(num_episodes)):
@@ -49,6 +52,7 @@ def random_2048(num_episodes, max_steps=np.inf):
         
         # record the maximum value achieved.
         max_value.append(env.max_value)
+        score.append(env.score)
 
         # if we achieved the best record, we save the trace.
         if env.max_value >= np.max(max_value):
@@ -59,9 +63,10 @@ def random_2048(num_episodes, max_steps=np.inf):
     max_count = dict(zip(unique, counts))
 
     print(max_count)
-    return trace_max
+    return trace_max, score
 
 if __name__ == "__main__":
-    trace_max = random_2048(1000)
+    trace_max, score = random_2048(1000)
     for el in trace_max:
         print(el)
+    print(np.max(np.array(score)))

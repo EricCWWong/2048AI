@@ -4,19 +4,16 @@ import tqdm
 
 def q_learning_2048(gamma, alpha, epsilon, policy, num_episodes, max_steps=np.inf):
     '''
-        q-learning algorithm for 2048
+        q-learning algorithm for 2048, using 4 weight vectors for each action.
     '''
 
     # create a game.
     env = Game_2048()
 
-    # initialise weight vector for a single action.
-    w_a = np.zeros(len(env.state))
-
     # initialise the weight vector for all action.
     w = []
     for _ in range(4):
-        w.append(w_a)
+        w.append(np.zeros(len(env.state)))
     w = np.array(w)
 
     # initialise an array to store the maximum value of the tiles.
@@ -27,6 +24,7 @@ def q_learning_2048(gamma, alpha, epsilon, policy, num_episodes, max_steps=np.in
 
         # record the trace for this episode.
         trace = []
+        score = []
 
         # we start a new game.
         env.new_game()
@@ -72,6 +70,7 @@ def q_learning_2048(gamma, alpha, epsilon, policy, num_episodes, max_steps=np.in
         
         # record the maximum value achieved.
         max_value.append(env.max_value)
+        score.append(env.score)
 
         # if we achieved the best record, we save the trace.
         if env.max_value == np.max(max_value):
@@ -82,7 +81,7 @@ def q_learning_2048(gamma, alpha, epsilon, policy, num_episodes, max_steps=np.in
     max_count = dict(zip(unique, counts))
 
     print(max_count)
-    return w, trace_max
+    return w, trace_max, score
 
 
 def q_learning_sa_2048(gamma, alpha, epsilon, policy, num_episodes, max_steps=np.inf):
@@ -93,11 +92,8 @@ def q_learning_sa_2048(gamma, alpha, epsilon, policy, num_episodes, max_steps=np
     # create a game.
     env = Game_2048()
 
-    # initialise weight vector for a single action.
-    w_a = np.zeros(len(env.state_action[0]))
-
     # initialise the weight vector for all action.
-    w = w_a
+    w = np.zeros(len(env.state_action[0]))
 
     # initialise an array to store the maximum value of the tiles.
     max_value = []
@@ -107,6 +103,7 @@ def q_learning_sa_2048(gamma, alpha, epsilon, policy, num_episodes, max_steps=np
 
         # record the trace for this episode.
         trace = []
+        score = []
 
         # we start a new game.
         env.new_game()
@@ -152,6 +149,7 @@ def q_learning_sa_2048(gamma, alpha, epsilon, policy, num_episodes, max_steps=np
         
         # record the maximum value achieved.
         max_value.append(env.max_value)
+        score.append(env.score)
 
         # if we achieved the best record, we save the trace.
         if env.max_value >= np.max(max_value):
@@ -162,4 +160,4 @@ def q_learning_sa_2048(gamma, alpha, epsilon, policy, num_episodes, max_steps=np
     max_count = dict(zip(unique, counts))
 
     print(max_count)
-    return w, trace_max
+    return w, trace_max, score

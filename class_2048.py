@@ -30,6 +30,7 @@ class Game_2048:
         self.reward = 0
         self.set_state_vector()
         self.set_state_action_vector()
+        self.score = 0
 
         # resetting the allowed moves of the game.
         self.set_allowed_moves()
@@ -210,6 +211,9 @@ class Game_2048:
     def is_terminal(self):
         '''
             Check if we have reached the terminal state.
+            If no moves are permitted, i.e.
+            self.actions = [False, False, False, False]
+            we will terminate the game.
         '''
 
         # if any moves are still allowed, we can continue to play the game.
@@ -222,6 +226,8 @@ class Game_2048:
     def new_tile_generation(self):
         '''
             This generates new tiles on empty tiles.
+            It will randomly choose an empty tile and 
+            replace that tile with either value 2 or 4.
         '''
         grid = self.grid.flatten()
         index = []
@@ -254,6 +260,7 @@ class Game_2048:
         
         self.grid = grid
         self.reward = reward_merge(old, self.grid)
+        self.score = self.score + reward_merge(old, self.grid)
         
         self.grid = self.new_tile_generation()
 
@@ -285,18 +292,17 @@ if __name__ == "__main__":
     game1.new_game()
     print(game1.grid)
     game1.make_move(up)
-    print(game1.reward)
-    print(game1.state_action)
+    print(game1.score)
     print(game1.grid)
     game1.make_move(right)
-    print(game1.reward)
+    print(game1.score)
     print(game1.grid)
     game1.make_move(down)
-    print(game1.reward)
+    print(game1.score)
     print(game1.grid)
     game1.make_move(left)
-    print(game1.reward)
+    print(game1.score)
     print(game1.grid)
     game1.make_move(down)
-    print(game1.reward)
+    print(game1.score)
     print(game1.grid)
