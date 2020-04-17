@@ -43,7 +43,7 @@ def reward_merge(old, new, max_tile=2048):
     # now we calculate the rewards, we only care about 4 or above.
     for key in diff:
         if key > 2:
-            reward = reward + np.log2(key) * diff[key]
+            reward = reward + key * diff[key]
 
     return reward
 
@@ -65,3 +65,15 @@ def reward_empty(grid):
             count = count + 1
 
     return count
+
+def reward_corner(state):
+    weighted_sum = 0
+    for i, el in enumerate(state):
+        if i == 0 or i == 3 or i == 12 or i == 15:
+            weighted_sum = weighted_sum + el * 10
+        elif i == 5 or i == 6 or i == 9 or i == 10:
+            weighted_sum = weighted_sum + el
+        else:
+            weighted_sum = weighted_sum + el * 5 
+
+    return weighted_sum

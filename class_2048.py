@@ -1,7 +1,7 @@
 import numpy as np
 import random
 from class_2048_helper import merge, neighbour_difference
-from reward_2048 import reward_merge, reward_align, reward_empty
+from reward_2048 import reward_merge, reward_align, reward_empty, reward_corner
 from representation import relationship_representation
 
 class Game_2048:
@@ -259,18 +259,19 @@ class Game_2048:
             grid = self.grid
         
         self.grid = grid
-        self.reward = reward_merge(old, self.grid)
+        # self.reward = reward_merge(old, self.grid)
         self.score = self.score + reward_merge(old, self.grid)
         
+        self.reward = np.sum(self.grid)
         self.grid = self.new_tile_generation()
 
-        #self.reward = self.reward + reward_align(self.grid)
+        # self.reward = self.reward + reward_align(self.grid)
 
         self.set_allowed_moves()   
         self.is_terminal()
         self.set_state_vector()
         self.set_state_action_vector()
-        
+        # self.reward = reward_corner(self.state)
         self.max_value = self.max()
             
             

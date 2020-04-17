@@ -2,6 +2,10 @@ import numpy as np
 
 
 def relationship_row(row):
+    '''
+        This function calculates the relative difference
+        between tiles in a given row.
+    '''
     diff = []
     for i, el in enumerate(row):
         for j, other in enumerate(row):
@@ -10,6 +14,10 @@ def relationship_row(row):
     return np.array(diff)
 
 def relationship(grid):
+    '''
+        This function calculates the horizontal releative differences
+        on the whole grid.
+    '''
     diff_grid = []
     for row in grid:
         diff_grid.append(relationship_row(row)) 
@@ -18,6 +26,14 @@ def relationship(grid):
     return diff_grid
 
 def relationship_representation(grid):
+    '''
+        This creates the representation of the grid. Start with
+        the log values of all grid, then the relative differences
+        of the values.
+
+        If the action is horizontal, we will only have the horizontal
+        relative differences in the representation. 
+    '''
 
     state_action_mat = []
     for i in range(4):

@@ -18,13 +18,13 @@ def q_learning_2048(gamma, alpha, epsilon, policy, num_episodes, max_steps=np.in
 
     # initialise an array to store the maximum value of the tiles.
     max_value = []
+    score = []
 
     # run episodes.
     for i in tqdm.tqdm(range(num_episodes)):
 
         # record the trace for this episode.
-        trace = []
-        score = []
+        trace = [] 
 
         # we start a new game.
         env.new_game()
@@ -97,13 +97,13 @@ def q_learning_sa_2048(gamma, alpha, epsilon, policy, num_episodes, max_steps=np
 
     # initialise an array to store the maximum value of the tiles.
     max_value = []
+    score = []
 
     # run episodes.
     for i in tqdm.tqdm(range(num_episodes)):
 
         # record the trace for this episode.
         trace = []
-        score = []
 
         # we start a new game.
         env.new_game()
