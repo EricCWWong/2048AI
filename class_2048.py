@@ -246,6 +246,8 @@ class Game_2048:
         '''
         old = self.grid
 
+        valid_move = True
+
         if move == 0 and self.actions[0]: # left
             grid = self.left_move()
         elif move == 1 and self.actions[1]: # right
@@ -257,22 +259,24 @@ class Game_2048:
         else:
             print('incorrect input or move is not allowed')
             grid = self.grid
+            valid_move = False
         
-        self.grid = grid
-        # self.reward = reward_merge(old, self.grid)
-        self.score = self.score + reward_merge(old, self.grid)
-        
-        self.reward = np.sum(self.grid)
-        self.grid = self.new_tile_generation()
+        if valid_move is True:
+            self.grid = grid
+            # self.reward = reward_merge(old, self.grid)
+            self.score = self.score + reward_merge(old, self.grid)
+            
+            self.reward = np.sum(self.grid)
+            self.grid = self.new_tile_generation()
 
-        # self.reward = self.reward + reward_align(self.grid)
+            # self.reward = self.reward + reward_align(self.grid)
 
-        self.set_allowed_moves()   
-        self.is_terminal()
-        self.set_state_vector()
-        self.set_state_action_vector()
-        # self.reward = reward_corner(self.state)
-        self.max_value = self.max()
+            self.set_allowed_moves()   
+            self.is_terminal()
+            self.set_state_vector()
+            self.set_state_action_vector()
+            # self.reward = reward_corner(self.state)
+            self.max_value = self.max()
             
             
             
