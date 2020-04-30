@@ -1,0 +1,20 @@
+\begin{thebibliography}{1}
+
+\bibitem{Bishop2006}
+Christopher~M. Bishop.
+\newblock {\em {Pattern Recognition And Machine Learning}}.
+\newblock Springer-Verlag New York, 2006.
+
+\bibitem{Fawcett2006}
+Tom Fawcett.
+\newblock {An Introduction to ROC Analysis}.
+\newblock {\em Pattern Recognition Letters}, 27:861--874, 2006.
+
+\bibitem{Mikolov2013}
+Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean.
+\newblock {Distributed Representations of Words and Phrases and their
+  Compositionality}.
+\newblock In {\em Advances in Neural Information Processing Systems (NIPS)},
+  pages 3111--3119, 2013.
+
+\end{thebibliography}
