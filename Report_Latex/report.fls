@@ -1,0 +1,160 @@
+PWD c:\Users\asbina\Desktop\sdf\Report_Latex
+INPUT C:\Users\asbina\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\report.tex
+OUTPUT c:\Users\asbina\Desktop\sdf\Report_Latex\report.log
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.sty
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.sty
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.sty
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.sty
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\iftex.sty
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\iftex.sty
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.sty
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.sty
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.sty
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.sty
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\preprint\authblk.sty
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\preprint\authblk.sty
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\report.aux
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\report.aux
+OUTPUT c:\Users\asbina\Desktop\sdf\Report_Latex\report.aux
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr17.tfm
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr8.tfm
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr6.tfm
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi12.tfm
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi8.tfm
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi6.tfm
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy8.tfm
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy6.tfm
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmti12.tfm
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr9.tfm
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx9.tfm
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx10.tfm
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx7.tfm
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx5.tfm
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmib10.tfm
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmmib7.tfm
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmmib5.tfm
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbsy10.tfm
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmbsy7.tfm
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmbsy5.tfm
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmtt10.tfm
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\myfigure.jpg
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\myfigure.jpg
+OUTPUT c:\Users\asbina\Desktop\sdf\Report_Latex\report.pdf
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\myfigure.jpg
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\myfigure.jpg
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\myfigure.jpg
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmti10.tfm
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\background.tex
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\background.tex
+INPUT C:\Users\asbina\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\method.tex
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\method.tex
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\2048_Screenshot.png
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\2048_Screenshot.png
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\2048_Screenshot.png
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\2048_Screenshot.png
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\2048_Screenshot.png
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\results.tex
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\results.tex
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\experiment1.png
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\experiment1.png
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\experiment1.png
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\experiment1.png
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\experiment1.png
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\experiment2.png
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\experiment2.png
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\experiment2.png
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\experiment2.png
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\experiment2.png
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\discussion.tex
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\discussion.tex
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\report.bbl
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\report.bbl
+INPUT c:\Users\asbina\Desktop\sdf\Report_Latex\report.aux
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx10.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx10.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx7.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx7.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx9.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx9.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmex10.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmex10.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi5.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi5.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi7.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi7.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmib10.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmib10.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr17.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr17.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr7.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr7.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr8.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr8.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr9.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr9.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy5.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy5.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy7.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy7.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti10.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti10.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti12.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti12.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmtt10.pfb
+INPUT C:\Users\asbina\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmtt10.pfb
