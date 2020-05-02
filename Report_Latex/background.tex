@@ -1,2 +1,21 @@
 \section{Background}
-Your background section text goes here\ldots
+\section{Background}
+$\epsilon$
+-Greedy policy (introduced in Lecture 8) is deployed for policy improvement and we use it to choose actions in experiment 1. Then we get the best trace and highest score by using the the weight learnt from q-learning policy.
+
+In experiment 2, we utilized
+$decay-\epsilon-greedy$
+- greedy policy, which is based on the normal
+$\epsilon$
+-greedy strategy but the 
+$\epsilon$
+value decays over time. This
+means that the strategy starts out with a high 
+$\epsilon$
+, and this leads to a high exploration rate. 
+Over time this
+$\epsilon$
+grows ever smaller until it fades, optimally as the policy has converged, so that an optimal policy can be executed
+without having to take further (possibly sub optimal) exploratory actions. We noticed that exploration is more important when the agent has inadequate information concerning the environment its interacting with. Once an agent obtain the information it needs to interact optimally with the environment, allowing it to exploit its knowledge makes more sense. We thus make value of 
+$\epsilon$
+decay across the life of an agent to have it learn and act optimally eventually. This would result in a gradual decay in epsilon with more and more episodes. Then we find the best trace and score using state-action vectors and one single weight.
