@@ -1,20 +1,14 @@
 \begin{thebibliography}{1}
 
-\bibitem{Bishop2006}
-Christopher~M. Bishop.
-\newblock {\em {Pattern Recognition And Machine Learning}}.
-\newblock Springer-Verlag New York, 2006.
+\bibitem{dedieu2017deep}
+Antoine Dedieu and Jonathan Amar.
+\newblock Deep reinforcement learning for 2048.
+\newblock In {\em Conference on Neural Information Processing Systems (NIPS),
+  31st, Long Beach, CA, USA}, 2017.
 
-\bibitem{Fawcett2006}
-Tom Fawcett.
-\newblock {An Introduction to ROC Analysis}.
-\newblock {\em Pattern Recognition Letters}, 27:861--874, 2006.
-
-\bibitem{Mikolov2013}
-Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean.
-\newblock {Distributed Representations of Words and Phrases and their
-  Compositionality}.
-\newblock In {\em Advances in Neural Information Processing Systems (NIPS)},
-  pages 3111--3119, 2013.
+\bibitem{sutton2018reinforcement}
+Richard~S Sutton and Andrew~G Barto.
+\newblock {\em Reinforcement learning: An introduction}.
+\newblock MIT press, 2018.
 
 \end{thebibliography}

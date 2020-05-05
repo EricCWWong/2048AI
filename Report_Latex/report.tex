@@ -22,78 +22,27 @@
 
 \begin{document}
 
-\title{Report Title}
-\author[*]{Author Name1}
-\author[**]{Author Name2}
-\affil[*]{Dept. of Information Studies}
-\affil[**]{Dept. of Physics \& Astronomy}
+\title{Learning 2048 by Reinforcement Learning}
+\author[*]{Chun Wing Wong}
+\author[**]{Asbin Rai}
+\author[**]{Wentao Xu}
+\author[**]{Xiaowen Man}
+\affil[*]{Dept. of Physics \& Astronomy}
+\affil[**]{Dept. of Information Studies}
 \affil[ ]{University College London, WC1E 6BT}
-\affil[ ]{\textit {\{email1,email2\}@ucl.ac.uk}}
 \date{\today}
 
 \maketitle
 
 \begin{abstract}
-The abstract text goes here. Here is a bit more of my abstract.
+2048 is a very popular decision base game on mobile devices. The game has very simple concept and very clear targets to achieve, which makes it an interesting case for an AI to learn through reinforcement learning. We have, therefore, decided to investigate this and multiple simulations are made. Unfortunately, we are not very convinced that our method has succeeded in training a competent AI to play the game. 
 \end{abstract}
 
 \section{Introduction}
-\label{sec:intro}
-Here is the text of your introduction.
+2048 has become a very popular game in the past 10 years. It has a very simple concept which involves moving the tiles around trying to achieve higher scores. As a group of people who enjoyed the game before, we have decided to attempt training an AI to play this game through pure reinforcement learning.  Multiple methods have been attempted but the results prove that 2048 perhaps is a game too complicated, despite the simplicity in the game concept, to be learnt through pure reinforcement learning. According to some online resources, it is shown that deep reinforcement learning with a 3 layer neural network is required to achieve decent results \cite{dedieu2017deep}.
+\\
 
-Here is a simple equation
-% note this uses the equation environment
-\begin{equation}
-    \label{eqn:simple_equation}
-    \alpha = \sqrt{ \beta }
-\end{equation}
-
-I can refer to my equation by saying look at Equation \eqref{eqn:simple_equation}.
-
-Here is a multi-line equation:
-% note this uses the align environment
-\begin{align}
-% \input and \weights in this equation are defined using a macro 
-% see the \newcommand lines at the top
-f(\datapoint; \weights)
-% & helps neatly align equations over multiple lines 
-& = \sigma(\weights^T\datapoint)
-\label{eqn:logistic_regresion_decision_function} % label
-\\ % line break
-& = \frac{1}{1+e^{-\weights^T\datapoint}}
-\notag % don't give this line an equation number
-\end{align}
-
-I can point people to literature like this \cite{Mikolov2013} (a conference paper) or this \cite{Fawcett2006} (a journal paper), or even this \cite[Sec. 4.1]{Bishop2006} (a book, with section indicated). See the file \texttt{report.bib} for how these bibliographic entries are defined.
-
-It helps to have a convention to the font used for particular mathematical objects. A common convention is: for simple values use lower case latin characters $s$ (this might include observed values in probabilistic work); for sets use caligraphic upper case $\mathcal{S}$; for vectors of values use bold latin $\vec{s}$; for matrices use upper case latin $S$; and for parameters (including parameters in probabilistic models) use lower case greek letters (scalar), $\sigma$, bold greek (vectors), $\vec{\sigma}$, and possibly upper-case greek for matrices of parameters $\Sigma$. However, it is up to you to develop your own style.
-
-\subsection{Subsection Heading}
-Write your subsection text here. Here I am referencing Section \ref{sec:intro}. Figures and tables can be inserted and referred to, e.g. Figure \ref{fig:simulation_figure} and Table \ref{tbl:results_table}.
-
-\begin{figure}
-    \centering
-    \includegraphics[width=3.0in]{myfigure}
-    \caption{Simulation Results}
-    \label{fig:simulation_figure}
-\end{figure}
-
-\begin{table}[htb]
-  \centering
-  \begin{tabular}{lcc}
-  \toprule
-  & Interested & Understand \\
-  \midrule
-  Linear Regression & N & Y \\
-  Neural Networks & Y & N \\
-  \bottomrule
-  \end{tabular}
-  \caption{Some results as a table.}
-  \label{tbl:results_table}
-\end{table}
-
-\subsection{Quoting and Emphasis}
-When you quote or emphasise things, you have a few options. I tend to put things in italics, e.g. Luke told me, \emph{Put it in italics!}. If you prefer to put it in quote-marks then do so, but make sure you use left and right quotes properly, e.g. Luke told me, ``Use left quotes to open, and right quotes to close!''.
+In the following, we will first present some background information such as a detailed explanation of the game mechanics. Then, we will present the method we used during the training process in the following section. Results will be presented after methods followed by a discussion section which will explain why we think our method has failed. 
 
 
 % sections for your report can be in subfiles

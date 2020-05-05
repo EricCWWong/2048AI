@@ -1,6 +1,6 @@
 \section{Method}
-\subsection{Game Mechanics}
-We have decided to follow the exact game mechanics in the actual game with no reduction and simplification in the rules. This means that we will always start with a random board with 2 tiles with values on each of the tiles "2" or "4". Then, after each valid move, a new tile with values "2" or "4" will be generated  on a random empty tile. We loose when no valid moves are allowed.
+\subsection{Game Mechanics in Simulations}
+Originally, we have considered simplifying the game mechanics by having a specific starting state and have a very fixed way of spawning new tiles to reduce randomness. However, we believe that this will defeat the whole point of the game, which mainly involves making moves that will limit the damage of randomness could do to our game. Thus, we have decided to follow the exact game mechanics with no reduction and simplification in the rules. This means that we will always start with a random board with 2 tiles with values on each of the tiles "2" or "4". Then, after each valid move, a new tile with values "2" or "4" will be generated  on a random empty tile. We loose when no valid moves are allowed.
 
 \subsection{Representation and Q-value Calculation}
 In our experiment, we have tried 2 types of representation, which are the simple representation and the relationship representation. They will be explained as follows. To calculate the q-value, we will use the linear approximation approach for simplicity.
@@ -14,7 +14,7 @@ To calculate the q-value, we will use our state vector acting on the weight vect
 \begin{equation*}
 q_{a} = \phi ^{T} w_{a}
 \end{equation*}
-where $q_{a}$ is the q value of that action and $w_{a}$ is the weight of that action.
+where $q_{a}$ is the q-value of that action and $w_{a}$ is the weight of that action.
 
 \begin{figure}
 	\centering

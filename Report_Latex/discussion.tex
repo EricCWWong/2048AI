@@ -1,2 +1,11 @@
 \section{Discussion}
-Your discussion section text goes here\ldots
+In this report, we have presented our attempt to learn playing the game 2048. We have started with the simple representation which is simply a vector with all the values of tiles on the board. We used the a linear value approximation and the weight is updated by the q-learning scheme. Unfortunately, after 1000 episode learning process, there's no significant improvement in the outcome of the learning. Increasing the number of episodes turns out to have very little impact and our agent is still barely better than a random agent. We have come up with a few possible explaination, which are:
+\\
+\begin{enumerate}
+	\item Our representation does not provide enough information for our agent to make good decisions. When we play the game, we don't make moves only based on the values of each individual tiles, we make moves based on the relationships between adjacent tiles. Therefore, perhaps we have to present this peice of information to our agent.
+	\item The number of states available is so large that by running 1000 episodes or even 10000 episodes, we still have not experienced most available states. Thus, our learning is still not very complete.
+	\item Randomness of the game means that even if we choose the best move possible that reduces the impact of randomness,  it is still possible that a game ruining tile will spawn. This will give a wrong message to  the AI that it is a bad move. This might impact our learning.
+\end{enumerate}
+
+
+Point 2 and 3 are very much the restriction of the game and our current computation power, so we realistically can only improve through point 1. To do so, we have added extra terms in our state vector which  encodes the differences between adjacent tiles, which we called the relationship representation. This will hopefully provide more information for our agent to make better moves.
