@@ -20,10 +20,10 @@ Like before, we have again tried to conclude by finding some explanations. By im
 	\item The power of value function approximation is that we do not require the simulation to experience all the specific state. Instead by going through one state, our agent should know how to make a decision for another state that shares some similarities. How should we capture these similarities?
 	\item Let's consider the board shown in figure \ref{fig:game_board}. Suppose we have another board where the values are simply those in figure \ref{fig:game_board} multiplied by 2. If we consider the values, these 2 boards are completely different. However, in terms of adjacent differences in log 2 scale, these 2 boards are completely the same. Should these 2 board be represented by 2 distinguishable state representation (former) or by the same state representation (latter)?
 \end{itemize}
-I believe our second attempt to improve the representation did not fully answer these questions. If we can find better answers to these questions, then perhaps we will have a further improved learning outcome.
+I believe our second attempt to improve the representation did not fully answer these questions. If we can find better answers to these questions, then perhaps we will be able to further improve our representation and thus improve our learning outcome.
 \\ 
 
-The failure to achieve higher score consistently then must also be due to point 2 and 3. In fact, we have strong belief that the random nature of the game is causing complication to the learning process, as making a good move does not necessarily guarantee a better outcome.
+The failure to achieve higher score consistently must also be due to point 2 and 3. In fact, we have strong belief that the random nature of the game is causing complication to the learning process, as making a good move does not necessarily guarantee a better outcome.
 \\
 
 In addition to that, from this simulation, we have started to doubt whether linear approximation is a good approximation scheme for our value function. We believe to achieve better score, we might have to use other types of approximation methods.
