@@ -1,5 +1,5 @@
 \section{Discussion}
-In this report, we have presented our attempt to learn playing the game 2048. We have started with the simple representation which is simply a vector with all the values of tiles on the board. We used the a linear value approximation and the weight is updated by the q-learning scheme. Unfortunately, after 1000 episode learning process, there's no significant improvement in the outcome of the learning. Increasing the number of episodes turns out to have very little impact and our agent is still barely better than a random agent. We have come up with a few possible explaination, which are:
+In this report, we have presented our attempt to learn playing the game 2048. We have started with the simple representation which is simply a vector with all the values of tiles on the board. We used the a linear value approximation and the weight is updated by the q-learning scheme. Unfortunately, after 1000 episode learning process, there's no significant improvement in the outcome of the learning. Our agent seems to struggle once we obtain a 128 tile. Increasing the number of episodes turns out to have very little impact and our agent is still barely better than a random agent. We have come up with a few possible explaination, which are:
 \\
 \begin{enumerate}
 	\item Our representation does not provide enough information for our agent to make good decisions. When we play the game, we don't make moves only based on the values of each individual tiles, we make moves based on the relationships between adjacent tiles. Therefore, perhaps we have to present this peice of information to our agent.
@@ -9,3 +9,27 @@ In this report, we have presented our attempt to learn playing the game 2048. We
 
 
 Point 2 and 3 are very much the restriction of the game and our current computation power, so we realistically can only improve through point 1. To do so, we have added extra terms in our state vector which  encodes the differences between adjacent tiles, which we called the relationship representation. This will hopefully provide more information for our agent to make better moves.
+\\
+
+With this new representation, there are no significant improvements in terms of final results. We are still mainly stuck once reaching 128. However, we can argue that there are some interesting signs of something learnt. When our agent plays the game, it seems to try putting the larger values in a corner, which is one of the more successful strategy for this game. There seems to be a slightly higher probability of getting 512 when comparing with the original representation, but we cannot conclude that it is an outcome of learning instead of pure luck due to our small sample size.
+\\
+
+Like before, we have again tried to conclude by finding some explanations. By improving our representation, we have successfully obtained some good signs of learning. This gives us evidence that perhaps this representation modification is a meaningful one. During this representation refinement procedure, we have encounter several interesting questions as follows:
+\begin{itemize}
+	\item What information does our agent actually need to achieve meaningful learning?
+	\item The power of value function approximation is that we do not require the simulation to experience all the specific state. Instead by going through one state, our agent should know how to make a decision for another state that shares some similarities. How should we capture these similarities?
+	\item Let's consider the board shown in figure \ref{fig:game_board}. Suppose we have another board where the values are simply those in figure \ref{fig:game_board} multiplied by 2. If we consider the values, these 2 boards are completely different. However, in terms of adjacent differences in log 2 scale, these 2 boards are completely the same. Should these 2 board be represented by 2 distinguishable state representation (former) or by the same state representation (latter)?
+\end{itemize}
+I believe our second attempt to improve the representation did not fully answer these questions. If we can find better answers to these questions, then perhaps we will have a further improved learning outcome.
+\\ 
+
+The failure to achieve higher score consistently then must also be due to point 2 and 3. In fact, we have strong belief that the random nature of the game is causing complication to the learning process, as making a good move does not necessarily guarantee a better outcome.
+\\
+
+In addition to that, from this simulation, we have started to doubt whether linear approximation is a good approximation scheme for our value function. We believe to achieve better score, we might have to use other types of approximation methods.
+\\
+
+Last but not least, from some other online sources such as \cite{dedieu2017deep}, it is evident that pure reinforcement learning might not be sufficient for this game. A mixture of various machine learning methods might be required to obtain much better results. In particular, \cite{dedieu2017deep} has used reinforcement learning with neural networks and seems to have achieved much convincing result.
+\\
+
+Despite the rather disappointing outcome, we definitely have further understood the limitations of reinforcement learning. In the case of grid-world for example, when number of states and actions are very limited, it is very obvious what representation and reward schemes we should choose. However, for more complicated cases with an enormous set of states based on various parameters, it becomes challenging to choose a meaningful representation. Randomness could add complication to the process and increase the "error" of our learning.

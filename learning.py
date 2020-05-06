@@ -79,7 +79,7 @@ def q_learning_2048(gamma, alpha, epsilon, policy, num_episodes, max_steps=np.in
     # report the frequency of each max tiles.
     unique, counts = np.unique(max_value, return_counts=True)
     max_count = dict(zip(unique, counts))
-
+    print("The frequency of obtaining the following as the max value:")
     print(max_count)
     return w, trace_max, score
 
@@ -159,5 +159,6 @@ def q_learning_sa_2048(gamma, alpha, epsilon, policy, num_episodes, max_steps=np
     unique, counts = np.unique(max_value, return_counts=True)
     max_count = dict(zip(unique, counts))
 
+    print("The frequency of obtaining the following as the max value:")
     print(max_count)
     return w, trace_max, score
