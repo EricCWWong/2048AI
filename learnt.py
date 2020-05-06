@@ -65,5 +65,6 @@ def play_2048(weight, num_episodes, max_steps=np.inf):
     unique, counts = np.unique(max_value, return_counts=True)
     max_count = dict(zip(unique, counts))
 
+    print("The frequency of obtaining the following as the max value:")
     print(max_count)
     return trace_max, score
